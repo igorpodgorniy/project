@@ -1,8 +1,19 @@
 'use strict';
 
-let incr = 10,
-    decr = 10;
+let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 
+let lastFilm = prompt('Один из последних просмоторенных фильмов?');
+let raitFilm = prompt('Насколько оцените его?');
 
+const personalMovieDB = {
+    count: 0,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-console.log((10*0.1+10*0.2)/10);
+personalMovieDB.movies[lastFilm] = raitFilm;
+personalMovieDB.count = numberOfFilms;
+
+console.log(personalMovieDB);
