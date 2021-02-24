@@ -6,14 +6,20 @@ let lastFilm = prompt('Один из последних просмоторенн
 let raitFilm = prompt('Насколько оцените его?');
 
 const personalMovieDB = {
-    count: 0,
+    count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
     privat: false
 };
 
-personalMovieDB.movies[lastFilm] = raitFilm;
-personalMovieDB.count = numberOfFilms;
+const a = prompt('Один из последних просмоторенных фильмов?'),
+    b = prompt('Насколько оцените его?'),
+    c = prompt('Один из последних просмоторенных фильмов?'),
+    d = prompt('Насколько оцените его?');
+
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
